@@ -1,2 +1,3 @@
 # ProjectGraphQL
- Learning full-stack development 
+ Full-stack Project 
+ TECK-STACK : React, JavaScript, Node.js, MongoDB, and GraphQL
