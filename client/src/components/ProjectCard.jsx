@@ -1,4 +1,3 @@
-
 export default function ProjectCard({project}) {
   return (
     <div className="col-md-6">
@@ -6,11 +5,11 @@ export default function ProjectCard({project}) {
         <div className="card-body">
           <div className="d-flex justfy-content-center align-items-center">
             <h5 className="card-title">{project.name}</h5>
-            <a className="btn btn-light"  href="{`/projects/${project.id}`}">View</a>
+            <a className="btn btn-light"  href= {`/projects/${project.id}`}> View </a>
           </div>
           <p className="small">
             Status: <strong>{project.status}</strong>
-          </p>
+            </p>
         </div>
       </div>
     </div>
