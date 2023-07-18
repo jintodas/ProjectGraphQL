@@ -3,7 +3,7 @@ import { useMutation } from "@apollo/client";
 import { GET_PROJECT } from "../queries/projectQueries";
 import {UPDATE_PROJECT} from "../mutations/projectMutations";
 
-export default function EditProjectForm(project) {
+export default function EditProjectForm({project}) {
   const [name, setName] = useState("project.name");
   const [description, setDescription] = useState("project.description");
   const [status, setStatus] = useState("");
@@ -19,7 +19,8 @@ const [updateProject] = useMutation(UPDATE_PROJECT, {
     if(!name || !description || !status){
         return alert ('Please fill out all fields');
     }
- } 
+    updateProject(name, description, status);
+ }; 
 
   return (
     <div className="mt-5">
